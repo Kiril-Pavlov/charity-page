@@ -10,7 +10,12 @@ const Navbar = () => {
   return (
     <nav>
         {links.map(item=>(
-            <a href={item.linkTo} key={item.linkName}>{item.linkName}</a>
+            <a 
+              href={item.linkTo} 
+              key={item.linkName}
+            >
+              {item.linkName}
+            </a>
         ))}
     </nav>
   )
