@@ -9,9 +9,9 @@ const Header = () => {
         <div className="max-w-5xl h-[104px]	m-auto flex flex-row items-center justify-between">
           <div className='flex flex-row gap-5 items-center'>
             <div>
-              <img src={Logo} alt="" />
+              <img src={Logo} alt="Logo" />
             </div>
-            <div>My donor</div>
+            <div className='font-serif font-bold text-3xl'>My donor</div>
           </div>
           <div>
             <Navbar/>
