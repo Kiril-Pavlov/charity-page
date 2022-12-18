@@ -13,6 +13,7 @@ const Navbar = () => {
             <a 
               href={item.linkTo} 
               key={item.linkName}
+              className=""
             >
               {item.linkName}
             </a>
