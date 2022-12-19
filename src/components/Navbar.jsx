@@ -8,12 +8,12 @@ const Navbar = () => {
         {linkName:"About us", linkTo:"#"},
     ]
   return (
-    <nav>
+    <nav className='flex gap-16'>
         {links.map(item=>(
             <a 
               href={item.linkTo} 
               key={item.linkName}
-              className=""
+              className="font-primaryFont"
             >
               {item.linkName}
             </a>
