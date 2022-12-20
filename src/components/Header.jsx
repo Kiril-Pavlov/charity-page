@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 
 import Logo from "../assets/logo.png"
 
 import {GiHamburgerMenu} from "react-icons/gi"
+import {GrClose} from "react-icons/gr"
 
 const Header = ({navLinks}) => {
+
+  const [isOpen,setIsOpen] = useState(false)
+
+  
+
   return (
     <header className="w-full h-[104px] bg-primaryColor px-4">
         <div className="max-w-5xl h-[104px]	m-auto flex flex-row items-center justify-between">
@@ -19,7 +25,12 @@ const Header = ({navLinks}) => {
             <Navbar navLinks={navLinks}/>
           </div>
           <div className='flex md:hidden'>
-            <GiHamburgerMenu size={25}/>
+            {isOpen === false ? (
+              <GiHamburgerMenu size={25}  onClick={()=>setIsOpen(!isOpen)}/>
+            ):(
+              <GrClose size={25}  onClick={()=>setIsOpen(!isOpen)}/>
+            )
+            }
           </div>
         </div>
     </header>
