@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = ({navLinks}) => {
   return (
-    <nav className='flex gap-16'>
+    <nav className='hidden md:flex gap-16'>
         {navLinks.map(item=>(
             <a 
               href={item.linkTo} 
