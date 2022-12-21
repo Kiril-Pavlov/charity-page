@@ -10,8 +10,6 @@ const Header = ({navLinks}) => {
 
   const [isOpen,setIsOpen] = useState(false)
 
-  
-
   return (
     <header className="w-full h-[104px] bg-primaryColor px-4">
         <div className="max-w-5xl h-[104px]	m-auto flex flex-row items-center justify-between">
