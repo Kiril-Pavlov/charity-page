@@ -8,10 +8,12 @@ import logoTwit from "../assets/twit-logo.png";
 const Footer = ({ footLinks }) => {
   return (
     <footer>
-      <div className="flex flex-col gap-4 items-start px-4 pt-8 max-w-5xl	m-auto md:flex-row">
-        <img src={logoImg} className="flex  pb-8" alt="Logo" />
-        <div>
-          <h3>USEFUL LINKS</h3>
+      <div className="flex flex-col items-start pt-8 px-4 md:px-0 max-w-5xl	m-auto md:flex-row">
+        <div className="flex pb-8 w-1/5">
+          <img src={logoImg} className="flex pb-8" alt="Logo" />
+        </div>
+        <div className="flex flex-col pb-8 md:w-2/5">
+          <h3 className="font-bold pb-4">USEFUL LINKS</h3>
           <ul>
             <li>
               <a href="#">Terms of Services</a>
@@ -27,9 +29,9 @@ const Footer = ({ footLinks }) => {
             </li>
           </ul>
         </div>
-        <div>
-          <h3>Home</h3>
-          <div>
+        <div className="flex flex-col pb-8 md:w-2/5">
+          <h3 className="font-bold pb-4">Home</h3>
+          <div className="flex flex-col">
             {footLinks.map((link) => (
               <a
                 href={link.linkTo}
@@ -42,8 +44,8 @@ const Footer = ({ footLinks }) => {
           </div>
         </div>
       </div>
-      <div className="flex px-4 max-w-5xl	m-auto">Connect via:</div>
-      <div className="container flex max-w-5xl	m-auto flex-col px-4 gap-8 md:flex-row md:justify-between">
+      <div className="flex max-w-5xl	m-auto pb-4 px-4 md:px-0">Connect via:</div>
+      <div className="container flex max-w-5xl	m-auto px-4 md:px-0 flex-col gap-8 md:flex-row md:justify-between">
         <div className="container flex flex-row gap-5 w-1/5 justify-between basic-auto">
           <img src={logoFB} alt="Facebook Logo" className="flex h-8 w-8" />
           <img src={logoIG} alt="Instagram Logo" className="flex h-8 w-8" />
