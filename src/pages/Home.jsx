@@ -1,10 +1,10 @@
 import React from 'react'
+import HomeHero from '../components/HomeHero'
 
 const Home = () => {
   return (
     <div>
-        Hero 1 section <br />
-        Hero 2 section <br />
+        <HomeHero/>
         Discover charities section <br />
         Best charity section <br />
         Why you should donate section
